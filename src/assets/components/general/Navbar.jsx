@@ -58,7 +58,7 @@ function Navbar() {
 
   return (
     <>
-    <nav className='flex justify-between items-center shadow fixed w-full z-[20] top-0 left-0 h-[7vh] bg-white p-3'>
+    <nav className='flex justify-between items-center shadow fixed w-full z-[20] top-0 left-0 h-[10vh] bg-white p-5'>
         {/* Logo */}
         <section>
             <img src="http://axoninfosystems.com/v4/wp-content/uploads/2018/07/axon-logo.png" alt="logo" className='w-[120px] lg:w-[200px]'/>
@@ -69,8 +69,6 @@ function Navbar() {
             </div>
             {navIsOpen?<AiOutlineClose size={50} onClick={toggleNav}/>:<BiMenuAltLeft size={50} onClick={toggleNav}/>}
         </section>
-
-       
     </nav>
      {/* Links */}
      <section className={navIsOpen?'fixed w-screen h-screen bg-black top-0 left-0 z-[40] ease duration-500'
