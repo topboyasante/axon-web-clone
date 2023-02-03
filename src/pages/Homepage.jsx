@@ -1,5 +1,7 @@
 import React from 'react'
 import Button from '../assets/components/general/Button'
+import About from '../assets/page-sections/About'
+import GRA from '../assets/page-sections/GRA'
 
 function Homepage() {
   return (
@@ -54,6 +56,12 @@ function Homepage() {
                 </section>
             </main>
         </section>
+
+        {/* About */}
+        <About/>
+
+        {/* Projects: */}
+        <GRA/>
     </main>
   )
 }
